@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Lucila Di Lorenzo
+ORG:Luzyla Dev
+TITLE:Frontend Developer
+TEL;TYPE=WORK,VOICE:+34 658 318 794
+IMPP;X-SERVICE-TYPE=WhatsApp:tel:+34 658 318 794
+EMAIL;TYPE=WORK:coder@luzyla.dev
+URL:https://luzyla.dev/
+X-SOCIALPROFILE;TYPE=LinkedIn:https://www.linkedin.com/in/luzyla
+X-SOCIALPROFILE;TYPE=Instagram:https://www.instagram.com/luzyla.dev/
+
+NOTE:Convirtiendo ideas en maravillosas experiencias web
+END:VCARD

@@ -1,0 +1,16 @@
+export function Icon({
+  component: Component,
+  className,
+  size,
+  color,
+  onClick,
+}) {
+  return (
+    <Component
+      className={className}
+      size={size}
+      color={color}
+      onClick={onClick}
+    />
+  );
+}
