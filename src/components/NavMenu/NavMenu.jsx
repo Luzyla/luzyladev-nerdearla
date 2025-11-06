@@ -3,7 +3,7 @@ import Button from "../Button/Button";
 
 export function NavMenu({ classNameBtn }) {
   return (
-    <div className="nav__buttons_container">
+    <nav className="nav__buttons_container nav-header">
       <Button
         className={`${classNameBtn} button-mode`}
         txtButton="PORTFOLIO"
@@ -15,6 +15,6 @@ export function NavMenu({ classNameBtn }) {
         txtButton="CONTACTO"
         onClick={downloadVCard}
       ></Button>
-    </div>
+    </nav>
   );
 }
