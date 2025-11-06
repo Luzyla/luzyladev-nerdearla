@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <main className="card">
       <div className="card__container_text">
-        <h1>¡Hola!</h1>
+        <p className="title1">¡Hola!</p>
         <p className="card__text">
           Qué lindo encontrarte por acá después de coincidir en
           <span className="card__text_highlight"> Nerdearla Madrid 2025</span>.
@@ -24,14 +24,14 @@ export default function Hero() {
         <nav className="card__buttons_container">
           <Button
             data-name="vCard"
-            className="button_base"
+            className="button_base button_contact"
             id="add-contact"
             txtButton="GUARDAR CONTACTO"
             onClick={downloadVCard}
           ></Button>
           <Button
             data-name="vCard"
-            className="button_base"
+            className="button_base button_vcard"
             id="add-contact"
             txtButton="VER PORTFOLIO"
             onClick={() => window.open("https://luzyla.dev/", "_blank")}

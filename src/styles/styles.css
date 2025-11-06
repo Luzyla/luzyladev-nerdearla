@@ -54,6 +54,8 @@
   --box-shadow-header: 0 0 29px 0 #fafafa40;
   --box-shadow-form: 0 4px 8px 0 #00000066, 0 6px 20px 0 #0000004d;
   --box-shadow-card: 0 0 10px 0 rgba(255, 255, 255, 0.05);
+
+  --box-shadow-header-mobile: 0 0 29px 0 #fafafa25;
 }
 
 * {
@@ -90,12 +92,12 @@ p {
   font-size: 18px;
 }
 
-h1,
+.title1,
 h2 {
   text-align: center;
 }
 
-h1,
+.title1,
 h2 {
   font-family: Allura;
   font-weight: 700;
@@ -150,8 +152,9 @@ header {
   padding: 5px 0;
   width: 100%;
   justify-content: flex-end;
+  align-items: center;
   box-shadow: var(--box-shadow-header);
-  height: 60px;
+  height: 80px;
 }
 
 /*--------------------------------
@@ -238,7 +241,7 @@ header {
 /*--------------------------------
     MENU DESPLEGABLE MOBILE
 ----------------------------------*/
-.contenedor-barra-mobile {
+/* .contenedor-barra-mobile {
   display: flex;
   z-index: 1;
   position: absolute;
@@ -257,7 +260,7 @@ header {
 .menu-desplegado {
   right: 0;
   top: 0;
-}
+} */
 
 /* ----------------------
           HERO
@@ -267,8 +270,8 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 3rem 6rem;
-  padding-bottom: 1rem;
+  /* padding: 3rem 6rem; */
+  /* padding-bottom: 1rem; */
   background-color: var(--background-color);
 
   background-image: linear-gradient(
@@ -332,6 +335,7 @@ header {
   cursor: pointer;
   font-weight: bold;
   transition: transform 0.4s;
+  width: 230px;
 }
 
 .button_base:hover {
@@ -391,6 +395,140 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/*-------------------------
+    @MEDIA GRANDES PANTALLAS
+-------------------------*/
+@media (min-width: 1400px) {
+  /*--------------------------------
+            HERO
+    ----------------------------------*/
+  .card {
+    padding: 0 14rem;
+    height: 100dvh;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button_base {
+    width: 250px;
+  }
+}
+
+/*-------------------------
+    @MEDIA TABLETS
+-------------------------*/
+@media (min-width: 600px) and (max-width: 900px) {
+}
+
+/*-------------------------
+    @MEDIA CELULARES
+-------------------------*/
+@media (max-width: 599px) {
+  /* ----------------------
+        HEADER
+---------------------- */
+  header {
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-header {
+    margin-right: 0;
+    width: fit-content;
+  }
+
+  .nav__buttons_container {
+    margin-right: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  /*--------------------------------
+            HERO
+    ----------------------------------*/
+  .card {
+    flex-direction: column;
+  }
+
+  .card__container_text {
+    order: 2;
+    align-items: center;
+    justify-content: center;
+    width: 90dvw;
+    margin: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  .card__container_image {
+    order: 1;
+    align-items: center;
+    justify-content: center;
+    width: 70dvw;
+    margin: 1rem;
+  }
+  .card__buttons_container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .button_base {
+    margin: 0.5rem 0;
+    width: 90%;
+    box-shadow: var(--box-shadow-header-mobile);
+  }
+
+  .button_vcard {
+    order: 1;
+  }
+
+  .button_contact {
+    order: 2;
+  }
+
+  .button_base:hover {
+    transform: scale(1.05);
+  }
+  /*--------------------------------
+            TEXTOS
+    ----------------------------------*/
+
+  .title1,
+  h2 {
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+  }
+
+  .card__text {
+    padding: 0.5rem 2rem;
+    margin: 10px 0;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /*--------------------------------
+                FOOTER
+    ----------------------------------*/
+
+  .seccion-footer {
+    width: 100dvw;
+    position: relative;
+  }
+
+  .img-contacto {
+    width: 55px;
+  }
+
+  .amor {
+    font-size: 14px;
+  }
 }
 
 /*-------------------------
